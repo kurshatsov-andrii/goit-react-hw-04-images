@@ -9,11 +9,11 @@ export const getImg = async (searchValue, shownPage) => {
     },
     params: {
       key: API_KEY,
-      q: `${searchValue}`,
+      q: searchValue,
       image_type: 'photo',
       photo: 'horizontal',
       safesearch: 'true',
-      page: `${shownPage}`,
+      page: shownPage,
       per_page: 12,
     },
   };
